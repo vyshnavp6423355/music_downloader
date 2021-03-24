@@ -26,19 +26,22 @@ def main():
     if ch == 1:
         try:
             yt.download_singles()
-        except:
+        except Exception as e:
+            print(f"\nLooks like something happened while the code was executing :( \n{e}")
             pass
 
     elif ch == 2:
         try:
             yt.download_playlist()
-        except:
+        except Exception as e:
+            print(f"\nLooks like something happened while the code was executing :( \n{e}")
             pass
 
     elif ch == 3:
         try:
             spdl.interface()
-        except:
+        except Exception as e:
+            print(f"\nLooks like something happened while the code was executing :( \n{e}")
             pass
 
     else:
